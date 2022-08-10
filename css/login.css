@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+}
+/*estilização do header */
+main {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#header {
+    display: flex;
+    width: 100%;
+    height: 10rem;
+    background-color: #1f1f24;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+}
+
+#logo {
+    width: 12rem;
+
+}
+
+/* estilizaçao do corpo principal do site */
+#div-login-principal {
+    width: 100%;
+    height: 40rem;
+    background-color: #1f1f24;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#div-container-login {
+    width: 70%;
+    height: 100%;
+    background-color: #D2C2B0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2%;
+}
+
+#div-caixa-login {
+    width: 70%;
+    height: 100%;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* ajuste para ficar responsivo */
+@media screen and (max-device-width:599px){
+    #div-caixa-login{
+        font-size: 1em;
+        width: 100%;
+    } 
+    #texto-footer h6{
+        display: none;
+    }
+    .voltar-home{
+        display: none;
+    }
+    #caixa-login-voltar-home{
+        margin-top: -1em;
+    }
+}
+
+/* estilizaçao do conteudo do login */
+#div-caixa-login h3 {
+    text-align: center;
+    padding: 3em 0 2em;
+}
+
+#caixa-login {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#caixa-login h5 {
+    margin: 0.3em 0;
+    font-size: small;
+}
+
+.caixa-de-digitacao {
+    width: 16em;
+    height: 2em;
+    border-radius: 40px;
+    margin-bottom: 1em;
+    background-color: #1f1f24;
+    color: #F5F5F5;
+}
+
+.caixa-de-digitacao:hover {
+    transform: scale(1.01);
+}
+
+#caixa-login p {
+    font-size: x-small;
+    margin: 0.3em 0;
+}
+
+#caixa-de-checagem {
+    margin: 1em;
+    color: #1f1f24;
+}
+
+#botao-de-login {
+    width: 6em;
+    height: 3em;
+    border-radius: 40px;
+    border-color: #1f1f24;
+    background-color: #1f1f24;
+    color: #F5F5F5;
+    font-size: large;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#botao-de-login:hover {
+    transform: scale(1.04);
+}
+
+#botao-de-login:active {
+    background-color: #F5F5F5;
+    color: #1f1f24;
+}
+
+#caixa-login-adicionais {
+    padding: 1em 0;
+    text-align: center;
+}
+
+#caixa-login-adicionais a {
+    color: #1f1f24;
+}
+
+#caixa-login-voltar-home {
+    text-align: center;
+    size-adjust: center;
+}
+
+#icone-voltar {
+    font-size: 2em;
+    color: #1f1f24;
+    margin-top: 0.2em;
+}
+
+#icone-voltar:hover {
+    background-color: #1f1f24;
+    color: #F5F5F5;
+    border-radius: 50%;
+}
+/* estilizaçao do footer */
+#footer {
+    background-color: #1f1f24;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pai-footer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#texto-footer {
+    color: white;
+    width: 50%;
+}
+
+.icone-footer {
+    color: white;
+    font-size: 2em;
+}
+
+.icone-footer:hover {
+    transform: scale(1.10);
+}
+
+#logo-footer img {
+    width: 10em;
+    height: 100%;
+}
+
+#icones-footer a{
+    text-decoration: none;
+}
